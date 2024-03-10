@@ -2,7 +2,9 @@
   "name": "@my-dinosaur-romanticism/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx run my-dinosaur-romanticism:serve"
+  },
   "private": true,
   "dependencies": {
     "@nestjs/common": "^10.0.2",
@@ -32,6 +34,7 @@
     "@types/node": "~18.16.9",
     "@typescript-eslint/eslint-plugin": "^6.13.2",
     "@typescript-eslint/parser": "^6.13.2",
+    "ajv": "^8.12.0",
     "eslint": "~8.48.0",
     "eslint-config-prettier": "^9.0.0",
     "jest": "^29.4.1",
