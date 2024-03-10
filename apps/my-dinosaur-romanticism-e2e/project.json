@@ -1,0 +1,20 @@
+{
+  "name": "my-dinosaur-romanticism-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "implicitDependencies": [
+    "my-dinosaur-romanticism"
+  ],
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/jest:jest",
+      "outputs": [
+        "{workspaceRoot}/coverage/{e2eProjectRoot}"
+      ],
+      "options": {
+        "jestConfig": "apps/my-dinosaur-romanticism-e2e/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

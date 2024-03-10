@@ -1,0 +1,24 @@
+{
+  "name": "my-dinosaur-romanticism",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/my-dinosaur-romanticism/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "my-dinosaur-romanticism:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "my-dinosaur-romanticism:build:development"
+        },
+        "production": {
+          "buildTarget": "my-dinosaur-romanticism:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}
